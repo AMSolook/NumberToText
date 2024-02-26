@@ -47,6 +47,10 @@ main {
     text-align: center;
 }
 
+.input-number:focus {
+    outline:none;
+}
+
 .result-text {
     text-wrap: wrap;
     width: 400px;
