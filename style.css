@@ -1,0 +1,70 @@
+@font-face {
+    font-family: VB;
+    src: url(font/Vazir-Bold.ttf);
+}
+@font-face {
+    font-family: VM;
+    src: url(font/Vazir-Medium.ttf);
+}
+@font-face {
+    font-family: VL;
+    src: url(font/Vazir-Light.ttf);
+}
+
+
+
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: VM;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    background-color: rgb(150, 255, 255);
+    height: 100%;
+}
+
+.bottom-part {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.bottom-part :first-child {
+    margin-left: 40px;
+}
+
+.input-number {
+    direction: ltr;
+    border-radius: 20px;
+    height: 50px;
+    width: 300px;
+    border: 1px solid;
+    font-size: 20px;
+    position: absolute;
+    left: calc(50% - 150px);
+    top: 100px;
+    text-align: center;
+}
+
+.result-text {
+    text-wrap: wrap;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid green;
+    border-radius: 20px;
+}
