@@ -13,14 +13,15 @@ body {
     margin: 0;
     height: 100%;
     font-family: VM;
+    padding: 0 100px;
+    background-color: rgb(210, 231, 250);
 }
 
 main {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     direction: rtl;
-    background-color: rgb(150, 255, 255);
     height: 100%;
 }
 
@@ -28,10 +29,6 @@ main {
     display: flex;
     justify-content: start;
     align-items: center;
-}
-
-.bottom-part :first-child {
-    margin-left: 40px;
 }
 
 .input-number {
@@ -53,13 +50,7 @@ main {
 
 .result-text {
     text-wrap: wrap;
-    width: 400px;
-    margin: 0 auto;
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 1px solid green;
-    border-radius: 20px;
 }
