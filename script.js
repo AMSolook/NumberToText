@@ -300,7 +300,7 @@ inputTheNumber.addEventListener('keydown', (key) => {
     if (key.key === 'Backspace') {
         keyNumber = keyNumber.slice(0, -1);
     } else {
-        keyNumber += key.key
+        everyNumberClick(key)
     }
     setTimeout(() => {
         _3digitNumber()
@@ -318,3 +318,38 @@ function _3digitNumber() {
 inputTheNumber.addEventListener('dblclick', () => {
     keyNumber = ''
 })
+
+function everyNumberClick(thisKey) {
+    switch (thisKey.key) {
+        case '1':
+            keyNumber += '1'
+            break;
+        case '2':
+            keyNumber += '2'
+            break;
+        case '3':
+            keyNumber += '3'
+            break;
+        case '4':
+            keyNumber += '4'
+            break;
+        case '5':
+            keyNumber += '5'
+            break;
+        case '6':
+            keyNumber += '6'
+            break;
+        case '7':
+            keyNumber += '7'
+            break;
+        case '8':
+            keyNumber += '8'
+            break;
+        case '9':
+            keyNumber += '9'
+            break;
+        case '0':
+            keyNumber += '0'
+            break;
+    }
+}
